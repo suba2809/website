@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Home Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fdfdfd;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .nav-icon {
+            font-size: 22px;
+        }
+
+        /* Projects Section */
+        .projects-section {
+            padding: 40px 20px;
+        }
+
+        .projects-section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .project-content {
+            padding: 15px;
+        }
+
+        .project-content h3 {
+            margin-top: 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        footer a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="projects.html">Projects</a>
+        </div>
+        <div class="nav-icon">💡</div>
+    </nav>
+
+    <!-- Projects Section -->
+    <div class="projects-section">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="project1.jpg" alt="Project 1">
+                <div class="project-content">
+                    <h3>Weather App</h3>
+                    <p>A simple web app that shows weather forecasts using a public API. Built with HTML, CSS, and JavaScript.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="project2.jpg" alt="Project 2">
+                <div class="project-content">
+                    <h3>Portfolio Website</h3>
+                    <p>My personal website to showcase my skills, resume, and contact information. Designed using responsive layout principles.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="project3.jpg" alt="Project 3">
+                <div class="project-content">
+                    <h3>Task Tracker</h3>
+                    <p>A to-do list application that helps users track their tasks and deadlines. Includes filtering and local storage support.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Connect with me:</p>
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+        <!-- Add more links if needed -->
+    </footer>
+
+</body>
+</html>
